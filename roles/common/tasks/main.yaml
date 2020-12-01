@@ -1,0 +1,8 @@
+- name: 'download and install docker using apt'
+  apt:
+    pkg:
+    - python3
+    - pip
+    - docker
+    state: latest
+    update_cache: true

@@ -1,0 +1,17 @@
+  
+- hosts: manager
+  become: true
+  connection: local
+  roles:
+  - common
+  - manager 
+
+- hosts: workers
+  become: true
+  roles:
+  - common
+  - worker
+    
+    
+    
+   
